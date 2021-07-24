@@ -1,0 +1,6 @@
+export const UserActions = {
+    "SEARCH_POKEMON": "SEARCH_POKEMON",
+    "SET_POKEMON": "SET_POKEMON",
+    "ADD_POKEMON": "ADD_POKEMON",
+    "REMOVE_POKEMON": "REMOVE_POKEMON"
+}

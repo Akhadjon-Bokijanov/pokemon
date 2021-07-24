@@ -1,0 +1,6 @@
+.pokemon-card-box{
+    max-width:300px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}

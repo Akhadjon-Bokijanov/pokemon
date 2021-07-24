@@ -1,0 +1,19 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #999;
+}
+
+.app-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-items{
+    display: flex;
+    min-width: 200px;
+    justify-content: space-between;
+}
