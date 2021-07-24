@@ -1,10 +1,11 @@
-import { takeLatest, all, call, put } from 'redux-saga/effects';
+import { takeLatest, all, call, put, debounce  } from 'redux-saga/effects';
 import { UserActions } from './user.actionTypes';
 import axios from 'axios';
 import { setPokemon } from './user.action';
 
 export function* searchPokemonAsync(){
-    yield takeLatest(UserActions.SEARCH_POKEMON, searchPokemon);
+    //yield takeLatest(UserActions.SEARCH_POKEMON, searchPokemon);
+    yield debounce(500, UserActions.SEARCH_POKEMON, searchPokemon);
 }
 
 function* searchPokemon({ payload }){
